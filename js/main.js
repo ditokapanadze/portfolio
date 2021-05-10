@@ -22,13 +22,10 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 const sections = document.querySelectorAll("section[id]");
 
-console.log(sections);
-
 function scrollActive() {
   const scrollY = window.pageYOffset;
 
   sections.forEach((current) => {
-    console.log(current);
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50;
     sectionId = current.getAttribute("id");
@@ -65,3 +62,69 @@ function scrollTop() {
 }
 
 window.addEventListener("scroll", scrollTop);
+
+const mixer = mixitup(".portfolio_container", {
+  selectors: {
+    target: ".portfolio__content",
+  },
+  animation: {
+    duration: 400,
+  },
+});
+
+gsap.from(".home__img", { opacity: 0, duration: 2, delay: 0.5, x: 60 });
+gsap.from(".data", { opacity: 0, duration: 2, delay: 0.5, x: 60 });
+gsap.from(".home__greeting, .home_name, .home__profession, .download__button", {
+  opacity: 0,
+  duration: 2,
+  delay: 0.8,
+  y: 25,
+  ease: "expo.out",
+  stagger: 0.2,
+});
+gsap.from(".nav__logo, .nav__toggle", {
+  opacity: 0,
+  duration: 2,
+  delay: 1.5,
+  y: 25,
+  ease: "expo.out",
+  stagger: 0.2,
+});
+gsap.from(".nav__item", {
+  opacity: 0,
+  duration: 2,
+  delay: 1.8,
+  y: 25,
+  ease: "expo.out",
+  stagger: 0.2,
+});
+gsap.from(".home__social-icon", {
+  opacity: 0,
+  duration: 2,
+  delay: 1.8,
+  y: 25,
+  ease: "expo.out",
+  stagger: 0.2,
+});
+
+const linkPortfolio = document.querySelectorAll(".portfolio__item");
+
+function activePortfolio() {
+  if (linkPortfolio) {
+    linkPortfolio.forEach((l) => l.classList.remove("active-portfolio"));
+    this.classList.add("active-portfolio");
+  }
+}
+
+linkPortfolio.forEach((L) => L.addEventListener("click", activePortfolio));
+
+const swiper = new Swiper(".testimonial_container", {
+  // Optional parameters
+  spaceBetwwen: 16,
+  loop: true,
+  grabCursor: true,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
