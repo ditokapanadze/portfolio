@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dito Kapanadze portfolio</title>
+  </head>
+  <body>
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bxs-chevron-up scrolltop_icon"></i>
+    </a>
+    <header class="I-header" id="header">
+      <nav class="nav bd-container">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav_list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active_link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+    <main class="I-main">
+      <section class="home" id="home">
+        <div id="particles-js"></div>
+        <div class="home__container bd-container bd-grid">
+          <div class="home__data">
+            <span class="home__greeting">Hello, I am</span>
+            <h1 class="home_name">Dito Kapanadze</h1>
+            <span class="home__profession">Web Developer</span>
+            <a  href="Ditokapanadze.pdf"  download class="button download__button button-light"
+              >Download CV
+            </a>
+           
+          </div>
+         
+          <div class="home__social">
+            <a href="https://www.facebook.com/dito.rattlehead" class="home__social-icon" target="_blank"
+              ><i class="bx bxl-facebook-square"></i
+            ></a>
+            <a href="#" class="home__social-icon"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://github.com/ditokapanadze" class="home__social-icon" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <div class="banner--fadeBottom"></div>
+
+      <section class="about section bg-container" id="about">
+        <h2 class="section-title">About me</h2>
+
+        <div class="about__container">
+          <div class="about__data">
+            <p class="about__description">
+              Hello, I am Dito Kapanadze, a self-taught front-end developer,
+               who is motivated to learn something new every day. 
+               I approach each problem as a learning experience.
+                I have a strong passion for coding and try to improve my skills in every possible way.
+            </p>
+          </div>
+        </div>
+      </section>
+       <section class="portfolio section bd-container" id="portfolio">
+        <span class="section-subtitle">Me recent works</span>
+        <h2 class="section-title">Portfolio</h2>
+        <!-- <div class="portfolio__nav">
+          <span class="portfolio__item" data-filter="all">All</span>
+          <span class="portfolio__item" data-filter=".web">Web</span>
+          <span class="portfolio__item" data-filter=".ux">Ui/Ux</span>
+          <span class="portfolio__item" data-filter=".app">App</span>
+        </div> -->
+
+        <div class="portfolio_container bd-grid">
+          <div class="portfolio__content mix web">
+            <a href="https://netflix-clone-253f0.web.app/" target="_blank"
+              ><img
+                class="portfolio__img"
+                alt="portfolio_img"
+                src="imgs/netflixgif.gif"
+            /></a>
+            <div class="portfolio__data">
+              <h4 class="portfolio__tools" >ReactJs/Firebase</h4>
+                <h2 class="portfolio__title">
+                  Movie database. Using TMDB public app, firebase and stripe payment. After registration you can create watchlist, change your avatar, and buy one of three packages.
+                </h2>
+              <div class="portfolio__icons">
+                <a href="https://netflix-clone-253f0.web.app/" target="_blank"
+                  ><i class="fas fa-globe portfolio__web"></i
+                ></a>
+                <a
+                  href="https://github.com/ditokapanadze/netflix-clone"
+                  target="_blank"
+                  ><i class="bx bxl-github portfolio__github"></i
+                ></a>
+              </div>
+              <!-- <a href="#" class="button button-link">View Details</a> -->
+            </div>
+          </div>
+
+          <div class="portfolio__content mix web">
+            <a  href="https://whatsapp-clone-4fcef.web.app/" target="_blank"
+              ><img
+                class="portfolio__img"
+                alt="portfolio_img"
+                src="imgs/megif.gif"
+            /></a>
+            <div class="portfolio__data">
+              <h4 class="portfolio__tools" >ReactJs/Firebase</h4>
+             <h2 class="portfolio__title">
+              Live messenger, after registration you can create chat rooms, sand messages and photos, reply to others and delete messages and rooms created by you.
+              
+                </h2>
+              <div class="portfolio__icons">
+                <a href="https://whatsapp-clone-4fcef.web.app/" target="_blank"
+                  ><i class="fas fa-globe portfolio__web"></i
+                ></a>
+                <a
+                  href="https://github.com/ditokapanadze/whatsApp-clone"
+                  target="_blank"
+                  ><i class="bx bxl-github portfolio__github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix ux">
+            <a href="https://clone-8b47f.web.app/" target="_blank"
+              ><img
+                class="portfolio__img"
+                alt="portfolio_img"
+                src="imgs/amazongif.gif"
+            /></a>
+            <div class="portfolio__data">
+              <h4 class="portfolio__tools" >ReactJs/Firebase/NodeJs</h4>
+             <h2 class="portfolio__title">
+              	E-commerce website. After registration you can add products to basket and proceed to checkout.
+                </h2>
+            
+            </div>
+            <div class="portfolio__icons">
+              <a href="https://clone-8b47f.web.app/" target="_blank"
+                ><i class="fas fa-globe portfolio__web"></i
+              ></a>
+              <a
+                href="https://github.com/ditokapanadze/amazon"
+                target="_blank"
+                ><i class="bx bxl-github portfolio__github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix ux">
+            <a href="https://budgetapp-dfa5d.web.app/" target="_blank"
+              ><img
+                class="portfolio__img"
+                alt="portfolio_img"
+                src="imgs/budgetapp.gif"
+            /></a>
+            <div class="portfolio__data">
+              <h4 class="portfolio__tools" >ReactJs</h4>
+              <h2 class="portfolio__title">
+                Small budget tracking app.  You can add your income and expenses and the app will count the balance for you.
+              </h2>
+              <div class="portfolio__icons"><a href="https://budgetapp-dfa5d.web.app/" target="_blank"
+                  ><i class="fas fa-globe portfolio__web"></i>
+                <a
+                  href="https://github.com/ditokapanadze/budget-app"
+                  target="_blank"
+                  ><i class="bx bxl-github portfolio__github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix app">
+            <a href="https://task-3191c.web.app/" target="_blank"
+              ><img
+                class="portfolio__img"
+                alt="portfolio_img"
+                src="imgs/task.gif"
+            /></a>
+            <div class="portfolio__data">
+              <h4 class="portfolio__tools" >ReactJs</h4>
+              <h2 class="portfolio__title">
+                A simple to-do app. You can add, edit and delete tasks.
+              </h2>
+              
+              <div class="portfolio__icons">
+                <a href="https://task-3191c.web.app/" target="_blank"
+                  ><i class="fas fa-globe portfolio__web"></i
+                ></a>
+                <a
+                  href="https://github.com/ditokapanadze/budget-app"
+                  target="_blank"
+                  ><i class="bx bxl-github portfolio__github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__content mix web">
+            <a href="https://travel-19e71.web.app/" target="_blank"
+              ><img
+                class="portfolio__img"
+                alt="portfolio_img"
+                src="imgs/travelgif.gif"
+            /></a>
+            <div class="portfolio__data">
+              <h4 class="portfolio__tools" >HTML/CSS</h4>
+                <h2 class="portfolio__title">
+                  Just a static HTML website, but pretty nice :)
+
+                </h2>
+               
+              <div class="portfolio__icons">
+                <a  href="https://travel-19e71.web.app/" target="_blank"
+                  ><i class="fas fa-globe portfolio__web"></i
+                ></a>
+                <a
+                  href="https://github.com/ditokapanadze/travel-site"
+                  target="_blank"
+                  ><i class="bx bxl-github portfolio__github"></i
+                ></a>
+              </div>
+              <!-- <a href="#" class="button button-link">View Details</a> -->
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- <section class="portfolio section bd-container">
+        <span class="section-subtitle">My client saying</span>
+        <h2 class="section-title">testimonial</h2>
+        <div class="testimonial__container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="testimonial__content swiper-slide">
+              <img
+                src="imgs/testimonial1.jpg"
+                alt=""
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__title">Nik Hollyday</h3>
+              <span class="testimonial__client">client</span>
+              <p class="testimonial_description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perferendis, vero provident cumque repellendus vel assumenda
+                sapiente cum quasi autem ipsum pariatur itaque ex consectetur
+                modi quo fugiat distinctio nisi rem.
+              </p>
+            </div>
+
+            <div class="testimonial__content swiper-slide">
+              <img
+                src="imgs/testimonial2.jpg"
+                alt=""
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__title">Nik Hollyday</h3>
+              <span class="testimonial__client">client</span>
+              <p class="testimonial_description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perferendis, vero provident cumque repellendus vel assumenda
+                sapiente cum quasi autem ipsum pariatur itaque ex consectetur
+                modi quo fugiat distinctio nisi rem.
+              </p>
+            </div>
+
+            <div class="testimonial__content swiper-slide">
+              <img
+                src="imgs/testimonial3.jpg"
+                alt=""
+                class="testimonial__img"
+              />
+              <h3 class="testimonial__title">Nik Hollyday</h3>
+              <span class="testimonial__client">client</span>
+              <p class="testimonial_description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Perferendis, vero provident cumque repellendus vel assumenda
+                sapiente cum quasi autem ipsum pariatur itaque ex consectetur
+                modi quo fugiat distinctio nisi rem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="contact bd-container" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact__container bd-grid">
+          <div class="contact__content bd-grid">
+            <div class="contact__box">
+              <i class="bx bx-phone contact__icon"></i>
+              <h3 class="contact__title">Phone</h3>
+              <span class="conact__description">+5599 599 40 38 51 </span>
+            </div>
+            <div class="contact__box">
+              <i class="bx bx-envelope contact__icon"></i>
+              <h3 class="contact__title">Gmail</h3>
+              <span class="conact__description">Ditokapanadze0@gmail.com</span>
+            </div>
+            <!-- <div class="contact__box">
+              <i class="bx bx-chat contact__icon"></i>
+              <h3 class="contact__title">Chat</h3>
+              <span class="conact__description">
+                <a href="#" class="contact__social"
+                  ><i class="bx bxl-whatsapp-square"></i
+                ></a>
+                <a href="#" class="contact__social"
+                  ><i class="bx bxl-telegram"></i
+                ></a>
+                <a href="#" class="contact__social"
+                  ><i class="bx bxl-messenger"></i
+                ></a>
+              </span>
+            </div> -->
+          </div>
+          <form class="contact__form" action="mailto:ditokapanadze0@gmail.com"
+          method="post"
+          enctype="text/plain"
+         >
+            <div class="contact__inputs">
+              <input type="text" placeholder="Name" class="contact__input" />
+              <input type="email" placeholder="Email" class="contact__input" />
+            </div>
+
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="7"
+              placeholder="Message"
+              class="input__text"
+            ></textarea>
+            <input
+              type="submit"
+              value="Send message"
+              class="button contact__button"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__container bd-container">
+        <div class="footer__social">
+          <a  href="https://www.linkedin.com/in/dito-kapanadze-673699212/"  target="_blank" class="footer__link"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/ditokapanadze" class="footer__link"  target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://www.facebook.com/dito.rattlehead/" target="_blank" class="footer__link"  target="_blank"><i class="bx bxl-facebook"></i></a>
+        </div>
+        <p class="footer__copy">&#169; 2021 All rights reserved</p>
+      </div>
+    </footer>
+    <script src="js/mixitup.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
